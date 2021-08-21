@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0rem 0rem;
+    min-height: 100vh;
+}
+
+:root {
+    --primary-color: #8B5CF6;
+
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    min-height: 3rem;
+    width: 100%;
+    padding: 1rem 1rem;
+}
+
+.nav-brand {
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.navigation ul {
+    text-align: right;
+}    
+
+.navigation ul li {
+    list-style: none;
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem
+}
+.container-center {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    height: 6rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer div {
+    text-align: center;
+    background-color: var(--primary-color);
+    min-height: 3rem;
+    width: 100%;
+    padding: 1rem 1rem;
+    color: white;
+    text-justify: auto;
+}
+
+body div div {
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 2rem 0rem;
+}
+
+form label {
+    color: var(--primary-color);
+    display: block;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 1rem 0rem;
+}
+
+form input {
+    border: 2px solid var(--primary-color);
+    display: block;
+    font-size: larger;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    border-radius: 1rem;
+}
+
+
+button {
+    margin-top: 3rem;
+    color: white;
+    background-color: var(--primary-color);
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 1rem 1rem;
+    padding: 0.5rem 1rem;
+}
