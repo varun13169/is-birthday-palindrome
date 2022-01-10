@@ -55,7 +55,6 @@ body {
     background-color: var(--primary-color);
     height: 6rem;
     width: 100%;
-    position: fixed;
     bottom: 0;
 }
 
