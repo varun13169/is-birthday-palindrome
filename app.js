@@ -1,9 +1,19 @@
-let bdPalForm = document.querySelector('#form-is-bd-pal');
-let bdPalDisp = document.querySelector('#bd-disp');
+const bdPalForm = document.querySelector('#form-is-bd-pal');
+const bdPalDisp = document.querySelector('#bd-disp');
 
-let birthdateEle = document.querySelector('#date-bd');
+const birthdateEle = document.querySelector('#date-bd');
 
-function bdPalOnSubmitHandler(e) {
+
+const isPal = s => {
+    for(let i=0; i<(s.length / 2); i++) {
+        if(s[i] !== s[s.length -(i+1)]) {
+            return false
+        }
+    }
+    return true
+}
+
+const bdPalOnSubmitHandler = e => {
     e.preventDefault();
 
     birthdate = birthdateEle.value.split("-");
@@ -20,12 +30,3 @@ function bdPalOnSubmitHandler(e) {
 
 bdPalForm.addEventListener('submit', bdPalOnSubmitHandler);
 
-
-function isPal(s) {
-    for(let i=0; i<(s.length / 2); i++) {
-        if(s[i] !== s[s.length -(i+1)]) {
-            return false
-        }
-    }
-    return true
-}
